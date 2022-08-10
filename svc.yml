@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: my-nginx
+  name: my-apache
 
 spec:
   type: NodePort
@@ -10,4 +10,4 @@ spec:
      port: 80
      nodePort: 30008
   selector:
-    app: nginx
+    app: apache2
